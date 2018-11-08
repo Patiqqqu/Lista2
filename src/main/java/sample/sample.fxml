@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <Button layoutX="656.0" layoutY="507.0" mnemonicParsing="false" onAction="#viewinvoice" prefHeight="25.0" prefWidth="129.0" text="Wyświetl fakturę" />
+    <TextArea fx:id="viewtextarea" layoutX="495.0" layoutY="40.0" prefHeight="347.0" prefWidth="437.0" />
+    <Label layoutX="24.0" layoutY="36.0" prefHeight="25.0" prefWidth="149.0" text="Podaj nazwę bazy danych:" />
+    <TextField fx:id="databasename" layoutX="174.0" layoutY="36.0" />
+    <Button layoutX="99.0" layoutY="375.0" mnemonicParsing="false" onAction="#displayinvoice" prefHeight="25.0" prefWidth="129.0" text="Wystaw fakturę" />
+   <Label layoutX="581.0" layoutY="412.0" text="Podaj nazwę klienta:" />
+   <Label layoutX="579.0" layoutY="451.0" text="Podaj numer faktury:" />
+   <TextField fx:id="clientnames" layoutX="721.0" layoutY="408.0" />
+   <TextField fx:id="invoicenames" layoutX="721.0" layoutY="447.0" />
+   <TextField fx:id="clientnamed" layoutX="238.0" layoutY="267.0" />
+   <TextField fx:id="price" layoutX="238.0" layoutY="222.0" />
+   <TextField fx:id="invoicenamed" layoutX="238.0" layoutY="311.0" />
+   <TextField fx:id="amount" layoutX="238.0" layoutY="180.0" />
+   <TextField fx:id="productname" layoutX="238.0" layoutY="133.0" />
+   <Label layoutX="109.0" layoutY="271.0" text="Podaj nazwę klienta:" />
+   <Label layoutX="108.0" layoutY="315.0" text="Podaj numer faktury:" />
+   <Label layoutX="98.0" layoutY="205.0" />
+   <Label layoutX="105.0" layoutY="137.0" text="Podaj nazwę artykułu:" />
+   <Label layoutX="133.0" layoutY="184.0" text="Podaj ilość:" />
+   <Label layoutX="107.0" layoutY="226.0" text="Podaj cenę za sztukę:" />
+   <Button layoutX="256.0" layoutY="375.0" mnemonicParsing="false" onAction="#addinvoice" text="Dodaj element do faktury:" />
+   <Button layoutX="345.0" layoutY="36.0" mnemonicParsing="false" onAction="#createnewdatabase" text="Stwórz" />
+   <Label layoutX="23.0" layoutY="61.0" text="Pole musi być wypełnione podczas dodawania nowej faktury." />
+</Pane>
